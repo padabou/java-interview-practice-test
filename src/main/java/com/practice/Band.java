@@ -1,4 +1,4 @@
-package com.lm;
+package com.practice;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Author {
+public class Band {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)

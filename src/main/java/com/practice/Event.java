@@ -1,10 +1,10 @@
-package com.lm;
+package com.practice;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-public class Book {
+public class Event {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
@@ -14,7 +14,7 @@ public class Book {
     private String thumbnailUrl;
 
     @Transient
-    private Set<Author> authors;
+    private Set<Band> bands;
 
     private Integer nbStars;
 
@@ -44,12 +44,12 @@ public class Book {
         this.thumbnailUrl = thumbnailUrl;
     }
 
-    public Set<Author> getAuthors() {
-        return authors;
+    public Set<Band> getBands() {
+        return bands;
     }
 
-    public void setAuthors(Set<Author> authors) {
-        this.authors = authors;
+    public void setBands(Set<Band> bands) {
+        this.bands = bands;
     }
 
     public Integer getNbStars() {
