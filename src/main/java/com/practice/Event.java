@@ -11,7 +11,7 @@ public class Event {
 
     private String title;
 
-    private String thumbnailUrl;
+    private String imgUrl;
 
     @Transient
     private Set<Band> bands;
@@ -36,12 +36,12 @@ public class Event {
         this.title = title;
     }
 
-    public String getThumbnailUrl() {
-        return thumbnailUrl;
+    public String getImgUrl() {
+        return imgUrl;
     }
 
-    public void setThumbnailUrl(String thumbnailUrl) {
-        this.thumbnailUrl = thumbnailUrl;
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
     public Set<Band> getBands() {

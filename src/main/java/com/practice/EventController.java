@@ -17,17 +17,17 @@ public class EventController {
     }
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public List<Event> findBooks(){
+    public List<Event> findEvents(){
         return eventService.getEvents();
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public void deleteBook(@PathVariable Long id){
+    public void deleteEvent(@PathVariable Long id){
         eventService.delete(id);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public void updateBook(@PathVariable Long id, @RequestBody Event event){
+    public void updateEvent(@PathVariable Long id, @RequestBody Event event){
         eventService.updateStars(id, event);
     }
 }
