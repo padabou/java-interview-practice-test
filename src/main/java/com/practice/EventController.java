@@ -1,12 +1,11 @@
 package com.practice;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/event")
+@RequestMapping("/api/events")
 public class EventController {
 
     private final EventService eventService;
@@ -28,6 +27,6 @@ public class EventController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public void updateEvent(@PathVariable Long id, @RequestBody Event event){
-        eventService.updateStars(id, event);
+        eventService.updateStars(id, null);
     }
 }
