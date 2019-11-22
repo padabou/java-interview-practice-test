@@ -26,6 +26,6 @@
 ## Bugs remontés:
 
 1. la table des evenements est bien remplie, mais aucun evenement ne s'affiche 
-2. la table des groupes est bien remplie, mais ils ne s'affichent pas
+2. l'ajout de note ne fonctionne pas
 3. en cliquant sur le bouton "supprimer" l'evenement ne s'affiche plus, mais en rafraichissant la page l'evenement réapparaît
-4. l'ajout de note ne fonctionne pas
+4. la table des groupes est bien remplie, mais ils ne s'affichent pas
